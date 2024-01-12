@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "материал",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "СоставУслуги.Материал",
+      "projection": "МатериалL",
+      "detailModelName": "i-i-s-stomatologiya-состав-услуги"
+    }
+  ],
+  "external": false,
+  "caption": "Услуга",
+  "name": "IISStomatologiyaУслугаE",
+  "className": "УслугаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-stomatologiya-услуга",
+      "modelProjection": "УслугаE"
+    }
+  ]
+}

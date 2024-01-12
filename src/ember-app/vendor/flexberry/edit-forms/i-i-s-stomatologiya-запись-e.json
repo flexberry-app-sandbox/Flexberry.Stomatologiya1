@@ -1,0 +1,55 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Кабинет",
+      "projection": "КабинетL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент",
+      "projection": "КлиентL",
+      "detailModelName": null
+    },
+    {
+      "master": "сотрудник",
+      "displayAttributeName": "фамилия",
+      "required": true,
+      "relationName": "ОказаниеУслуг.Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": "i-i-s-stomatologiya-оказание-услуг"
+    },
+    {
+      "master": "услуга",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "ОказаниеУслуг.Услуга",
+      "projection": "УслугаL",
+      "detailModelName": "i-i-s-stomatologiya-оказание-услуг"
+    }
+  ],
+  "external": false,
+  "caption": "Запись",
+  "name": "IISStomatologiyaЗаписьE",
+  "className": "ЗаписьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-stomatologiya-запись",
+      "modelProjection": "ЗаписьE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-stomatologiya-услуга-e",
+  "editForm": "i-i-s-stomatologiya-услуга-e",
+  "external": false,
+  "caption": "Услуга",
+  "name": "IISStomatologiyaУслугаL",
+  "className": "УслугаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-stomatologiya-услуга",
+      "modelProjection": "УслугаL"
+    }
+  ]
+}

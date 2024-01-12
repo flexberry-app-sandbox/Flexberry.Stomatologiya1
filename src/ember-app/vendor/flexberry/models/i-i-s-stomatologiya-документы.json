@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISStomatologiyaДокументы",
+  "modelName": "i-i-s-stomatologiya-документы",
+  "className": "Документы",
+  "nameSpace": "IIS.Stomatologiya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерПаспорта",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "полис",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "серияПаспорта",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-stomatologiya-клиент",
+      "inverse": "документы"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДокументыE",
+      "modelName": "i-i-s-stomatologiya-документы",
+      "attrs": [
+        {
+          "name": "серияПаспорта",
+          "caption": "Серия паспорта",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерПаспорта",
+          "caption": "Номер паспорта",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "полис",
+          "caption": "Полис",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

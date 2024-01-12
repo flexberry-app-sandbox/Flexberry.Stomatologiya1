@@ -1,0 +1,85 @@
+﻿{
+  "applicationCaption": "Stomatologiya",
+  "applicationTitle": "Stomatologiya",
+  "items": [
+    {
+      "link": null,
+      "menuName": "stomatologiya",
+      "caption": "Stomatologiya",
+      "title": "Stomatologiya",
+      "children": [
+        {
+          "link": "i-i-s-stomatologiya-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-услуга-l",
+          "menuName": null,
+          "caption": "Услуга",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-производитель-l",
+          "menuName": null,
+          "caption": "Производитель",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-регистр-записи-l",
+          "menuName": null,
+          "caption": "Регистр записи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-кабинет-l",
+          "menuName": null,
+          "caption": "Кабинет",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-материал-l",
+          "menuName": null,
+          "caption": "Материал",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-оплата-l",
+          "menuName": null,
+          "caption": "Оплата",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-stomatologiya-запись-l",
+          "menuName": null,
+          "caption": "Запись",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

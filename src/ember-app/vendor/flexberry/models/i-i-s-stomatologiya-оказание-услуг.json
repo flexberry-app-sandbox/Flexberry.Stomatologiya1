@@ -1,0 +1,88 @@
+﻿{
+  "name": "IISStomatologiyaОказаниеУслуг",
+  "modelName": "i-i-s-stomatologiya-оказание-услуг",
+  "className": "ОказаниеУслуг",
+  "nameSpace": "IIS.Stomatologiya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-stomatologiya-сотрудник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "услуга",
+      "relatedTo": "i-i-s-stomatologiya-услуга",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "запись",
+      "relatedTo": "i-i-s-stomatologiya-запись",
+      "inverse": "оказаниеУслуг"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОказаниеУслугE",
+      "modelName": "i-i-s-stomatologiya-оказание-услуг",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Фамилия",
+          "lookupValueField": "фамилия",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-stomatologiya-сотрудник",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Услуга",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Услуга",
+          "name": "услуга",
+          "relatedTo": "i-i-s-stomatologiya-услуга",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

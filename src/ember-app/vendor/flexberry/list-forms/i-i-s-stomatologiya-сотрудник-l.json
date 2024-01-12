@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-stomatologiya-сотрудник-e",
+  "editForm": "i-i-s-stomatologiya-сотрудник-e",
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISStomatologiyaСотрудникL",
+  "className": "СотрудникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-stomatologiya-сотрудник",
+      "modelProjection": "СотрудникL"
+    }
+  ]
+}

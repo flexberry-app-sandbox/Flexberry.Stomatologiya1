@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Производитель",
+      "projection": "ПроизводительL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Материал",
+  "name": "IISStomatologiyaМатериалE",
+  "className": "МатериалE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-stomatologiya-материал",
+      "modelProjection": "МатериалE"
+    }
+  ]
+}

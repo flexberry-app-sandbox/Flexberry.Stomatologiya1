@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISStomatologiyaКабинет",
+  "modelName": "i-i-s-stomatologiya-кабинет",
+  "className": "Кабинет",
+  "nameSpace": "IIS.Stomatologiya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерКабинета",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КабинетE",
+      "modelName": "i-i-s-stomatologiya-кабинет",
+      "attrs": [
+        {
+          "name": "номерКабинета",
+          "caption": "Номер кабинета",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КабинетL",
+      "modelName": "i-i-s-stomatologiya-кабинет",
+      "attrs": [
+        {
+          "name": "номерКабинета",
+          "caption": "Номер кабинета",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

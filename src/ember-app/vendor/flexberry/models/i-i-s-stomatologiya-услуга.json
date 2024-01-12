@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISStomatologiyaУслуга",
+  "modelName": "i-i-s-stomatologiya-услуга",
+  "className": "Услуга",
+  "nameSpace": "IIS.Stomatologiya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодУслуги",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "составУслуги",
+      "relatedTo": "i-i-s-stomatologiya-состав-услуги",
+      "inverse": "услуга"
+    }
+  ],
+  "projections": [
+    {
+      "name": "УслугаE",
+      "modelName": "i-i-s-stomatologiya-услуга",
+      "attrs": [
+        {
+          "name": "кодУслуги",
+          "caption": "Код услуги",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "СоставУслугиE",
+          "caption": "Состав услуги",
+          "name": "составУслуги",
+          "relatedTo": "i-i-s-stomatologiya-состав-услуги",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "УслугаL",
+      "modelName": "i-i-s-stomatologiya-услуга",
+      "attrs": [
+        {
+          "name": "кодУслуги",
+          "caption": "Код услуги",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

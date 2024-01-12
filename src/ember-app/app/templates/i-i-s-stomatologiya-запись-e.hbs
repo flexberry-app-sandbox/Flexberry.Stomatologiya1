@@ -1,0 +1,146 @@
+<h3 class="ui header">{{t "forms.i-i-s-stomatologiya-запись-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодЗаписи
+      class=(if (v-get validationModel "кодЗаписи" "isInvalid") "error")
+      label=(t "forms.i-i-s-stomatologiya-запись-e.кодЗаписи-caption")
+      data-test-i-i-s-stomatologiya-запись-e-кодЗаписи=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодЗаписи" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.время
+      class=(if (v-get validationModel "время" "isInvalid") "error")
+      label=(t "forms.i-i-s-stomatologiya-запись-e.время-caption")
+      data-test-i-i-s-stomatologiya-запись-e-время=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "время" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-stomatologiya-запись-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-stomatologiya-запись-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.сумма
+      class=(if (v-get validationModel "сумма" "isInvalid") "error")
+      label=(t "forms.i-i-s-stomatologiya-запись-e.сумма-caption")
+      data-test-i-i-s-stomatologiya-запись-e-сумма=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сумма" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.комментарий
+      class=(if (v-get validationModel "комментарий" "isInvalid") "error")
+      label=(t "forms.i-i-s-stomatologiya-запись-e.комментарий-caption")
+      data-test-i-i-s-stomatologiya-запись-e-комментарий=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "комментарий" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-stomatologiya-запись-e.кабинет-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.кабинет
+      displayAttributeName="номерКабинета"
+      autocomplete=true
+      relationName="кабинет"
+      projection="КабинетL"
+      title=(t "forms.i-i-s-stomatologiya-запись-e.кабинет-caption")
+      readonly=readonly
+      componentName="кабинетLookup"
+      class=(if (v-get validationModel "кабинет" "isInvalid") "error")
+      data-test-i-i-s-stomatologiya-запись-e-кабинет=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кабинет" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-stomatologiya-запись-e.сотрудник-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудник
+      displayAttributeName="фамилия"
+      autocomplete=true
+      relationName="сотрудник"
+      projection="СотрудникL"
+      title=(t "forms.i-i-s-stomatologiya-запись-e.сотрудник-caption")
+      readonly=readonly
+      componentName="сотрудникLookup"
+      class=(if (v-get validationModel "сотрудник" "isInvalid") "error")
+      data-test-i-i-s-stomatologiya-запись-e-сотрудник=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудник" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-stomatologiya-запись-e.клиент-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.клиент
+      displayAttributeName="фамилия"
+      autocomplete=true
+      relationName="клиент"
+      projection="КлиентL"
+      title=(t "forms.i-i-s-stomatologiya-запись-e.клиент-caption")
+      readonly=readonly
+      componentName="клиентLookup"
+      class=(if (v-get validationModel "клиент" "isInvalid") "error")
+      data-test-i-i-s-stomatologiya-запись-e-клиент=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "клиент" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-stomatologiya-запись-e.оказаниеУслуг-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="оказаниеУслугGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.оказаниеУслуг
+      content=model.оказаниеУслуг
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "оказаниеУслуг" "isInvalid") "error")
+      data-test-i-i-s-stomatologiya-запись-e-оказаниеУслуг=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "оказаниеУслуг" "message")}}
+  </div>
+</form>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Stomatologiya.model.Dolzhnost</class>
+        <class>Stomatologiya.model.Dokumenty</class>
+        <class>Stomatologiya.model.OkazanieUslug</class>
+        <class>Stomatologiya.model.Usluga</class>
+        <class>Stomatologiya.model.Klient</class>
+        <class>Stomatologiya.model.Proizvoditel</class>
+        <class>Stomatologiya.model.RegistrZapisi</class>
+        <class>Stomatologiya.model.Kabinet</class>
+        <class>Stomatologiya.model.Material</class>
+        <class>Stomatologiya.model.Sotrudnik</class>
+        <class>Stomatologiya.model.Oplata</class>
+        <class>Stomatologiya.model.Zapis</class>
+        <class>Stomatologiya.model.SostavUslugi</class>
+        <class>Stomatologiya.model.FlexberryAdvLimit</class>
+        <class>Stomatologiya.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Stomatologiya.model.NewPlatformFlexberryServicesLock</class>
+        <class>Stomatologiya.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

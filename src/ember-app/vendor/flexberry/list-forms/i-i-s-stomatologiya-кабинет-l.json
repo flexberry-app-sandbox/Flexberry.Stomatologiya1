@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-stomatologiya-кабинет-e",
+  "editForm": "i-i-s-stomatologiya-кабинет-e",
+  "external": false,
+  "caption": "Кабинет",
+  "name": "IISStomatologiyaКабинетL",
+  "className": "КабинетL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-stomatologiya-кабинет",
+      "modelProjection": "КабинетL"
+    }
+  ]
+}

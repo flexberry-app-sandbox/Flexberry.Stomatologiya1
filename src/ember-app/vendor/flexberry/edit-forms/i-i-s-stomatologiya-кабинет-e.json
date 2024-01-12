@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Кабинет",
+  "name": "IISStomatologiyaКабинетE",
+  "className": "КабинетE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-stomatologiya-кабинет",
+      "modelProjection": "КабинетE"
+    }
+  ]
+}
